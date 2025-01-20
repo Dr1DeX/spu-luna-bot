@@ -1,0 +1,17 @@
+[project]
+name = "spu-luna-bot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "aio-pika>=9.5.4",
+    "aiogram>=3.17.0",
+    "deep-translator>=1.11.4",
+    "httpx>=0.28.1",
+    "pillow>=11.1.0",
+    "pre-commit>=4.0.1",
+    "pydantic>=2.10.5",
+    "pydantic-settings>=2.7.1",
+    "uvicorn>=0.34.0",
+]
