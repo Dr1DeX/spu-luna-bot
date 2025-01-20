@@ -1,0 +1,18 @@
+version: '3'
+
+networks:
+  dispatcher_service_net:
+    external: true
+
+
+services:
+  bot:
+    container_name: bot
+    build:
+      context: .
+      dockerfile: .docker/dev/bot/Dockerfile
+    restart: always
+    env_file:
+      - .env.staging
+    networks:
+      - dispatcher_service_net
